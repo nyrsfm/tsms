@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_weight="9"
+        android:id="@+id/layout_logtop"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+        <EditText
+            android:layout_weight="9"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contact_text"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/layout_logtop"
+        android:layout_above="@id/layout_logtop"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="保存"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/save_contact_button" />
+            <Button
+                android:text="取消"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_contact_button" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

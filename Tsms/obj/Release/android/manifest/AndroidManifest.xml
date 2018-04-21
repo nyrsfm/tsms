@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Tsms.Tsms" android:versionCode="1" android:versionName="1.0" android:installLocation="preferExternal">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.READ_SMS" />
+  <uses-permission android:name="android.permission.RECEIVE_SMS" />
+  <uses-permission android:name="android.permission.WRITE_SMS" />
+  <uses-permission android:name="android.permission.SEND_SMS" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="Tsms" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true">
+    <activity android:label="AppLogActivity" android:name="md566ef70c0cefdc6869a9a98502398f5c3.AppLogActivity" />
+    <activity android:label="BroadcastReceiverActivity" android:name="md566ef70c0cefdc6869a9a98502398f5c3.BroadcastReceiverActivity" />
+    <activity android:icon="@drawable/icon" android:label="Tsms" android:name="md566ef70c0cefdc6869a9a98502398f5c3.MainActivity" />
+    <activity android:label="SMSContentProviderActivity" android:name="md566ef70c0cefdc6869a9a98502398f5c3.SMSContentProviderActivity" />
+    <service android:exported="true" android:name="com.xamarin.example.SMSReceiverService" />
+    <activity android:label="SMSTransferConfigActivity" android:name="md566ef70c0cefdc6869a9a98502398f5c3.SMSTransferConfigActivity" />
+    <activity android:label="SMSTransferContactActivity" android:name="md566ef70c0cefdc6869a9a98502398f5c3.SMSTransferContactActivity" />
+    <activity android:configChanges="orientation|screenSize" android:label="Tsms" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md566ef70c0cefdc6869a9a98502398f5c3.SplashScreen">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Tsms.Tsms.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>

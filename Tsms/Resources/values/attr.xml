@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!-- 标题属性 -->
+  <declare-styleable name="TitleAttr">
+  </declare-styleable>
+</resources>
